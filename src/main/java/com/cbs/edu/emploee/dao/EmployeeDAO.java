@@ -9,7 +9,7 @@ public interface EmployeeDAO {
     void add(Employee employee);
     //Read
     List<Employee> getAll();
-    Employee getById(int id);
+    Employee getByLogin(String login);
     //Update
     void update(Employee employee);
     //Delete

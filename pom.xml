@@ -8,17 +8,29 @@
     <groupId>com.edu.cbs</groupId>
     <artifactId>emploees</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
-   <dependencies>
-       <dependency>
-           <groupId>org.projectlombok</groupId>
-           <artifactId>lombok</artifactId>
-           <version>1.16.18</version>
-           <scope>provided</scope>
-       </dependency>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
+        </dependency>
+
    </dependencies>
-
-
 
 </project>

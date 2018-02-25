@@ -1,7 +1,13 @@
 package com.cbs.edu.emploee.entity;
 
+import lombok.*;
 import java.util.Date;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 public class Employee {
     private int id;
     private String firstname;
@@ -13,8 +19,4 @@ public class Employee {
     private boolean isMarried;
     private Date birthday;
     private boolean admin;
-
-    public Employee() {
-    }
-
 }
